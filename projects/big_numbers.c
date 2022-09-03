@@ -131,7 +131,6 @@ int bn_init_int(bn *t , long long init_int)
     while(init_int > base - 1)
     {
         a[i] = init_int % base;
-        //printf("%lld\n", a[i]);
         init_int /= base ;
         i++;
     }
@@ -646,7 +645,6 @@ int main() {
     bn *a = bn_new();
     bn *b = bn_new();
     scanf("%100000s", ch1);
-   // scanf("/\n");
    // scanf("%100000s", ch2);
     bn *c ;
     int code = bn_init_string(a, ch1);
